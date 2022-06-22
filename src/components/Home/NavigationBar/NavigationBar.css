@@ -1,0 +1,10 @@
+.navbar {
+    height: 50px;
+    display: #fff;
+    justify-content: end;
+    align-items: end;
+}
+
+.logo {
+    width: 150px;
+}
