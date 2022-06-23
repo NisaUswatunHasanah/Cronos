@@ -7,10 +7,10 @@ const Intro = () => {
       <Container  className="text-center d-flex justify-content-center align-item-center">
         <Row>
           <Col>
-            <h1>Financial Accounting Software</h1>
-            {/* <div className="intro mt-2 text-center"> */}
+            <div className="title">Financial Accounting Software</div>
+            <div className="introButton mt-4 text-center">
               <Button variant="dark">Explore Demo</Button>
-            {/* </div> */}
+            </div>
           </Col>
         </Row>
       </Container>

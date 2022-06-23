@@ -5,8 +5,10 @@ import Price from '../Home/Price/Price'
 const Home = () => {
   return (
     <>
+    <div className="header border">
     <NavigationBar />
     <Intro />
+    </div>
     <Price />
     </>
   )
