@@ -16,7 +16,7 @@ const Navigationbar = () => {
       <Navbar
         collapseOnSelect
         expand="lg"
-        style={{ backgroundColor: "#6495ED" }}
+        style={{ backgroundColor: "#4682B4" }}
       >
         <Container>
           <Navbar.Brand href="#/">
@@ -27,6 +27,7 @@ const Navigationbar = () => {
               id="nav-dropdown-dark-example"
               title="Features"
               menuVariant="light"
+              
             >
               <Dropdown.Item href="#/action-1">Bank</Dropdown.Item>
               <Dropdown.Item href="#/action-2">Bills</Dropdown.Item>
@@ -37,11 +38,12 @@ const Navigationbar = () => {
               <Dropdown.Item href="#/action-7">Online Payment</Dropdown.Item>
               <Dropdown.Item href="#/action-8">Vendor Portal</Dropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#recources">Price</Nav.Link>
+            <Nav.Link href="/yui">Price</Nav.Link>
             <NavDropdown
               id="nav-dropdown-dark-example"
               title="Resources"
               menuVariant="light"
+              href="yui"
             >
               <Dropdown.Item href="#/action-1">
                 Help Documentation
@@ -54,7 +56,7 @@ const Navigationbar = () => {
               <Dropdown.Item href="#/action-7">All Recources</Dropdown.Item>
             </NavDropdown>
             <Nav.Link href="#signIn">Sign In</Nav.Link>
-            <Button variant="outline-dark">Sign Up</Button>
+            <Button variant="outline-light">Sign Up</Button>
           </Nav>
         </Container>
       </Navbar>
