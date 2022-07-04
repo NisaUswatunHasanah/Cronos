@@ -38,12 +38,12 @@ const Navigationbar = () => {
               <Dropdown.Item href="#/action-7">Online Payment</Dropdown.Item>
               <Dropdown.Item href="#/action-8">Vendor Portal</Dropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/yui">Price</Nav.Link>
+            <Nav.Link href="/PriceList">Price</Nav.Link>
             <NavDropdown
               id="nav-dropdown-dark-example"
               title="Resources"
               menuVariant="light"
-              href="yui"
+              href="Price"
             >
               <Dropdown.Item href="#/action-1">
                 Help Documentation

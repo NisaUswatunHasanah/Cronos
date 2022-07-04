@@ -3,6 +3,7 @@ import "../Price/Price.css";
 
 const Price = () => {
   return (
+    <>
     <Container>
       <br/>
       <h1 className="text-center">Simple and affordable pricing</h1>
@@ -46,6 +47,7 @@ const Price = () => {
         </Col>
       </Row>
     </Container>
+    </>
   );
 };
 
