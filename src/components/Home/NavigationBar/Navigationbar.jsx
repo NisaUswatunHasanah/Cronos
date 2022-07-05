@@ -29,14 +29,23 @@ const Navigationbar = () => {
               menuVariant="light"
               
             >
-              <Dropdown.Item href="#/action-1">Bank</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Bills</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Client Portal</Dropdown.Item>
-              <Dropdown.Item href="#/action-4">Expenses</Dropdown.Item>
-              <Dropdown.Item href="#/action-5">Inventory</Dropdown.Item>
-              <Dropdown.Item href="#/action-6">Sales Order</Dropdown.Item>
-              <Dropdown.Item href="#/action-7">Online Payment</Dropdown.Item>
-              <Dropdown.Item href="#/action-8">Vendor Portal</Dropdown.Item>
+              <Dropdown.Item href="#/Purchasing">Purchasing</Dropdown.Item>
+              <Dropdown.Item href="#/Master Data">Master Data</Dropdown.Item>
+              <Dropdown.Item href="#/Cash Bank">Cash Bank</Dropdown.Item>
+              <Dropdown.Item href="#/General Ledger">General Ledger</Dropdown.Item>
+              <Dropdown.Item href="#/Account Payabel">Account Payabel</Dropdown.Item>
+              <Dropdown.Item href="#/Account Receiveable">Account Receiveable</Dropdown.Item>
+              <Dropdown.Item href="#/Fixed Assets">Fixed Assets</Dropdown.Item>
+              <Dropdown.Item href="#/Inventory">Inventory</Dropdown.Item>
+              <Dropdown.Item href="#/Configuration">Configuration</Dropdown.Item>
+              <Dropdown.Item href="#/Payroll">Payroll</Dropdown.Item>
+              <Dropdown.Item href="#/Report Finance">Report Finance</Dropdown.Item>
+              <Dropdown.Item href="#/Production">Production</Dropdown.Item>
+              <Dropdown.Item href="#/Scrap">Scrap</Dropdown.Item>
+              <Dropdown.Item href="#/Sales">Sales</Dropdown.Item>
+              <Dropdown.Item href="#/Maintenence Management">Maintenence Management</Dropdown.Item>
+              <Dropdown.Item href="#/Human Resources">Human Resources</Dropdown.Item>
+              <Dropdown.Item href="#/financing accounting cronos">financing accounting cronos</Dropdown.Item>
             </NavDropdown>
             <Nav.Link href="/PriceList">Price</Nav.Link>
             <NavDropdown

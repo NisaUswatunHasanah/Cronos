@@ -5,7 +5,7 @@ const PriceList = () => {
   return (
     <>
     <Navigationbar />
-    <Container>
+    <Container className="bg-primary">
       <br/>
       <h1 className="text-center">Simple and affordable pricing</h1>
       <br/>
@@ -21,7 +21,7 @@ const PriceList = () => {
               <Button variant="outline-dark">START NOW</Button>
             </Card.Body>
             <footer className="bg-primary text-light">
-              <div style={{textAlign: "left", margin: "20px"}}>
+              <div style={{textAlign: "left", margin: "20px", width: "18rem", height: "38rem"}}>
               <ul>
                 <li>Invite 3 Users </li>
                 <li>Manage Invoices (Up to 5,000) </li>
@@ -52,7 +52,7 @@ const PriceList = () => {
               <Button variant="outline-dark">START NOW</Button>
             </Card.Body>
             <footer className="bg-primary text-light">
-              <div style={{textAlign: "left", margin: "20px"}}>
+              <div style={{textAlign: "left", margin: "20px", width: "18rem", height: "38rem"}}>
               <ul>
                 <li>Invite 10 Users </li>
                 <li>Sales Approval </li>
@@ -95,7 +95,7 @@ const PriceList = () => {
               <Button variant="outline-dark">START NOW</Button>
             </Card.Body>
             <footer className="bg-primary text-light">
-              <div style={{textAlign: "left", margin: "20px"}}>
+              <div style={{textAlign: "left", margin: "20px", width: "18rem", height: "38rem"}}>
               <ul>
                 <li>Invite Unlimited Users </li>
                 <li>3 Branches</li>

@@ -1,4 +1,17 @@
-.price {
+.bg {
+    background-color: red;
     height: 100vh;
-    background-color: #fff;
+    background-size: cover;
 }
+
+.kartu {
+    background-color: royalblue;
+    width: 320px;
+    margin-left: 45px;
+}
+
+.learnmore {
+    text-align: center;
+    margin-top: 100px;
+}
+

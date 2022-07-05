@@ -3,18 +3,18 @@ import "../Price/Price.css";
 
 const Price = () => {
   return (
-    <>
-    <Container>
+    <div className="bg">
       <br/>
       <h1 className="text-center">Simple and affordable pricing</h1>
       <br/>
+      <Container>
       <Row>
         <Col md={4} className="price">
-          <Card className="bg-primary text-white text-center">
-            <Card.Header className="bg-light text-dark" as="h5">
+          <Card className="kartu">
+            <Card.Header className="bg-light text-dark text-center" as="h5">
               STANDARD
             </Card.Header>
-            <Card.Body>
+            <Card.Body className="text-center">
               <Card.Title>Rp.150.000,00</Card.Title>
               <Card.Text>/month billed annually.</Card.Text>
               <Button variant="outline-light">START NOW</Button>
@@ -22,11 +22,11 @@ const Price = () => {
           </Card>
         </Col>
         <Col md={4} className="price">
-          <Card className="bg-primary text-white text-center">
-            <Card.Header className="bg-light text-dark" as="h5">
+          <Card className="kartu">
+            <Card.Header className="bg-light text-dark text-center" as="h5">
               PROFESSIONAL
             </Card.Header>
-            <Card.Body>
+            <Card.Body className="text-center">
               <Card.Title>Rp.400.000,00</Card.Title>
               <Card.Text>/month billed annually.</Card.Text>
               <Button variant="outline-light">START NOW</Button>
@@ -34,11 +34,11 @@ const Price = () => {
           </Card>
         </Col>
         <Col md={4} className="price">
-          <Card className="bg-primary text-white text-center">
-            <Card.Header className="bg-light text-dark" as="h5">
+          <Card className="kartu">
+            <Card.Header className="bg-light text-dark text-center" as="h5">
               ULTIMATE
             </Card.Header>
-            <Card.Body>
+            <Card.Body className="text-center">
               <Card.Title>Rp.1.000.000,00</Card.Title>
               <Card.Text>/month billed annually.</Card.Text>
               <Button variant="outline-light">START NOW</Button>
@@ -46,8 +46,9 @@ const Price = () => {
           </Card>
         </Col>
       </Row>
-    </Container>
-    </>
+      </Container>
+      <h5 className='learnmore'><a href="/PriceList">Learn more...</a></h5>
+    </div>
   );
 };
 
