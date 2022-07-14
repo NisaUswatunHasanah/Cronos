@@ -3,7 +3,7 @@ import "../Price/Price.css";
 
 const Price = () => {
   return (
-    <div className="bg">
+    <div className="bg-light">
       <br/>
       <h1 className="text-center">Simple and affordable pricing</h1>
       <br/>
