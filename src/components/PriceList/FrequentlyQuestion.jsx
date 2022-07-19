@@ -3,7 +3,7 @@ import Accordion from 'react-bootstrap/Accordion';
 const FrequentlyQuestion = () => {
   return (
     <div>
-        <h2 style={{textAlign: "center"}}>Have a Question?</h2>
+        <h2 style={{textAlign: "center"}}>Frequently Asked Questions</h2>
           <Accordion>
       <Accordion.Item eventKey="0">
         <Accordion.Header><h5>How do I sign up?</h5></Accordion.Header>
