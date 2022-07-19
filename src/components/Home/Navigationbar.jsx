@@ -9,6 +9,7 @@ import {
 } from "react-bootstrap";
 // import Logo from "../../Assets/logo.png";
 import "./NavigationBar.css";
+import "../../Assets/Logo.png"
 
 const Navigationbar = () => {
   return (
@@ -20,7 +21,7 @@ const Navigationbar = () => {
       >
         <Container>
           <Navbar.Brand href="#/">
-            <img src={Logo} alt="" className="logo" />
+            <img src={"Logo"} alt="" className="logo" />
           </Navbar.Brand>
           <Nav>
             <NavDropdown
