@@ -1,4 +1,5 @@
 import { Card, CardGroup, Row, Col } from "react-bootstrap";
+import { BsEnvelopeOpen, BsTelephoneForward } from "react-icons/bs";
 
 const Question = () => {
   return (
@@ -7,31 +8,40 @@ const Question = () => {
         <Row>
             <Col >
             <CardGroup>
-      <Card>
+      <Card style={{textAlign: "left", margin: "10px", width: "18rem", height: "18rem"}}>
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>Sales Enquiry</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+          <p><BsEnvelopeOpen /> sales@cronos.com</p>
+          <br/>
+          <p><BsTelephoneForward /> US- 8443165544</p>
+          <p><BsTelephoneForward /> UK- 8000856099</p>
+          <p><BsTelephoneForward /> Australia- 1800911076</p>
+          <p><BsTelephoneForward /> South Africa- 27214268110</p>
+          <p><BsTelephoneForward /> Canada- 15146736167</p>
           </Card.Text>
         </Card.Body>
       </Card>
-      <Card>
+      <Card style={{textAlign: "left", margin: "10px", width: "18rem", height: "18rem"}}>
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title> Support Enquiry </Card.Title>
           <Card.Text>
-            This card has supporting text below as a natural lead-in to
-            additional content.{' '}
+          <p><BsEnvelopeOpen /> support@cronos.com</p>
+          <br/>
+          <p><BsTelephoneForward /> US- 8443165544</p>
+          <p><BsTelephoneForward /> UK- 8000856099</p>
+          <p><BsTelephoneForward /> Australia- 1800911076</p>
+          <p><BsTelephoneForward /> South Africa- 27214268110</p>
+          <p><BsTelephoneForward /> Canada- 15146736167</p>
           </Card.Text>
         </Card.Body>
       </Card>
-      <Card>
+      <Card style={{textAlign: "left", margin: "10px", width: "18rem", height: "18rem"}}>
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>Partnership Enquiry </Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
+          <p><BsEnvelopeOpen /> partnership@cronos.com</p>
+          <p><BsEnvelopeOpen /> accountant@cronos.com</p>
           </Card.Text>
         </Card.Body>
       </Card>

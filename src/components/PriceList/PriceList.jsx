@@ -3,6 +3,7 @@
 import { Card, Button, Container, Row, Col } from "react-bootstrap";
 import Navigationbar from '../Home/NavigationBar/Navigationbar'
 import Question from "./Question";
+import FrequentlyQuestion from "./FrequentlyQuestion";
 
 const PriceList = () => {
   return (
@@ -124,6 +125,9 @@ const PriceList = () => {
       <br/>
       <br/>
       <Question/>
+      <br/>
+      <br/>
+      <FrequentlyQuestion/>
 
     </div>
   )
