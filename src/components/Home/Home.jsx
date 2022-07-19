@@ -1,13 +1,13 @@
-import NavigationBar from '../Home/NavigationBar/Navigationbar'
-import Intro from '../Home/Intro/Intro'
-import Price from '../Home/Price/Price'
-import ManfaatCronos from './ManfaatCronos/ManfaatCronos'
+import Navigationbar from './Navigationbar'
+import Intro from '../Home/Intro'
+import Price from '../Home/Price'
+import ManfaatCronos from './ManfaatCronos'
 
 const Home = () => {
   return (
     <>
     <div className="header border">
-    <NavigationBar />
+    <Navigationbar />
     <Intro />
     </div>
     <ManfaatCronos/>

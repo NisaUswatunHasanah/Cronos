@@ -1,7 +1,7 @@
 
 
 import { Card, Button, Container, Row, Col } from "react-bootstrap";
-import Navigationbar from '../Home/NavigationBar/Navigationbar'
+import Navigationbar from "../Home/Navigationbar";
 import Question from "./Question";
 import FrequentlyQuestion from "./FrequentlyQuestion";
 

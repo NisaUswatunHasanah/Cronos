@@ -7,8 +7,8 @@ import {
   Button,
   Dropdown,
 } from "react-bootstrap";
-import Logo from "../../../Assets/Logo.png";
-import "../NavigationBar/NavigationBar.css";
+// import Logo from "../../Assets/logo.png";
+import "./NavigationBar.css";
 
 const Navigationbar = () => {
   return (

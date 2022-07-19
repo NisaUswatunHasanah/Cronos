@@ -1,5 +1,5 @@
 import { Card, Button, Container, Row, Col } from "react-bootstrap";
-import "../Price/Price.css";
+import "./Price.css";
 
 const Price = () => {
   return (
