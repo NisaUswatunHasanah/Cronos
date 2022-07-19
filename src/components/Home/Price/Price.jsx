@@ -5,7 +5,7 @@ const Price = () => {
   return (
     <div className="bg-light">
       <br/>
-      <h1 className="text-center">Simple and affordable pricing</h1>
+      <h1 className="text-center" style={{padding:"90px"}}>Simple and affordable pricing</h1>
       <br/>
       <Container>
       <Row>
