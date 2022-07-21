@@ -85,7 +85,7 @@ const SingUp =()=> {
                     <p style={{borderBottom:"1px solid grey",lineHeigth:"10px"}}></p>   
                 </div>
                 <div style={{margin:"30px"}}>
-                   <Button type='primary'>Memulai</Button>   
+                   <Button type='primary' onClick={()=>{navigate("/berhasil")}}>Memulai</Button>   
                    <div  style={{marginLeft:"600px"}}>
                        <tg>Kebijakan Privasi</tg>
                    </div>

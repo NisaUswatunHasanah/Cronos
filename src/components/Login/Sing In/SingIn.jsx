@@ -26,7 +26,7 @@ const SingIn=()=> {
                   style={{fontSize:"20px",textIndent:"4px"}}/>} />
                   </div>
                   
-                  <Button style={{margin:"15px",width:"385px",height:'50px'}} type="primary" onClick={()=> {navigate("/kelengkapanData")}}>
+                  <Button style={{margin:"15px",width:"385px",height:'50px'}} type="primary" onClick={()=> {navigate("")}}>
                     CREATE ACCOUNT
                   </Button>
                   <div>

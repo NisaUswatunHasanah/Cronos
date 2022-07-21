@@ -9,8 +9,10 @@ import {
 } from "react-bootstrap";
 import "./NavigationBar.css";
 import Logo from "../../Assets/cronos.png"
+import {  useNavigate } from "react-router-dom";
 
 const Navigationbar = () => {
+  const navigate = useNavigate()
   return (
     <div>
       <Navbar
@@ -74,8 +76,8 @@ const Navigationbar = () => {
               <Dropdown.Item href="#/action-6">Webinars</Dropdown.Item>
               <Dropdown.Item href="#/action-7">All Recources</Dropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#signIn">Sign In</Nav.Link>
-            <Button variant="outline-light">Sign Up</Button>
+            <Nav.Link href="/signIn">Sign In</Nav.Link>
+            <Button onClick={()=>{navigate("/signUp")}} variant="outline-light">Sign Up</Button>
           </Nav>
         </Container>
       </Navbar>

@@ -7,6 +7,7 @@ import PriceList from '../src/components/PriceList/PriceList'
 import SingUp from './components/Login/Sing Up/SingUp';
 import BuatPassword from './components/Login/Sing Up/BuatPassword';
 import SingIn from './components/Login/Sing In/SingIn';
+import BerhasilSingUp from './components/Login/Sing Up/BerhasilSingUp';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/kelengkapanData" element={<SingUp/>}/>
           <Route path='/signUp' element={<BuatPassword/>}/>
           <Route path='signIn' element={<SingIn/>}/>
+          <Route path='berhasil' element={<BerhasilSingUp/>}/>
         </Routes>
       </Router>
     </div>
