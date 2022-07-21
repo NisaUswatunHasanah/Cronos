@@ -1,4 +1,4 @@
-import { Card, Input, Space} from 'antd';
+import { Button, Card, Input, Space} from 'antd';
 import React from 'react';
 import { InfoCircleTwoTone } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
@@ -73,7 +73,7 @@ const SingUp =()=> {
                     <Space>
                         <InfoCircleTwoTone />
                             <tg>
-                                Konfigurasi tarif pajak di organisasi anda dengan melakukan navigasi ke pengaturan > pajak.
+                                Konfigurasi tarif pajak di organisasi anda dengan melakukan navigasi ke pengaturan  pajak.
                             </tg> 
                     </Space>
                 </div>
@@ -81,6 +81,16 @@ const SingUp =()=> {
                     <p> Catatan: </p>
                     <p style={{color:"GrayText",lineHeight:"2px",textIndent:"35px"}}> anda dapat mengubah semua detail ini  nantinya di pengaturan, jika dibutuhkan. </p>
                 </div>
+                <div style={{margin:"30px"}}>
+                    <p style={{borderBottom:"1px solid grey",lineHeigth:"10px"}}></p>   
+                </div>
+                <div style={{margin:"30px"}}>
+                   <Button type='primary'>Memulai</Button>   
+                   <div  style={{marginLeft:"600px"}}>
+                       <tg>Kebijakan Privasi</tg>
+                   </div>
+                </div>
+                
               
 
                     
