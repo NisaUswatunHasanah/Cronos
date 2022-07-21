@@ -9,10 +9,15 @@ export default function Footbar() {
                 <div className="row">
                     <div className="col-4">
                         <span className="brand">
+                           
                         <img className="logo" src={Logo} alt=""/>
                         </span>
+                        <br/>
+                        <br/>
                         <p className="brand-tagline font weight-light">
-                            Get your order as soon as quickly
+                        Helping ambitious entrepreneurs improve their business skills & 
+transition to top data driven
+enterprise systems
                         </p>
                     </div>
                     <div className="col-3 mr-5">
