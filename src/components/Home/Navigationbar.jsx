@@ -8,7 +8,7 @@ import {
   Dropdown,
 } from "react-bootstrap";
 import "./NavigationBar.css";
-import Logo from "../../Assets/Logo.jpg"
+import Logo from "../../Assets/cronos.png"
 
 const Navigationbar = () => {
   return (
@@ -20,7 +20,9 @@ const Navigationbar = () => {
       >
         <Container>
           <Navbar.Brand href="#/">
-            <img src={"Logo"} alt="" className="logo" />
+            <div >
+          <img className="logo" src={Logo} alt=""/>
+            </div>
           </Navbar.Brand>
           <Nav>
           <div className="grid-container">

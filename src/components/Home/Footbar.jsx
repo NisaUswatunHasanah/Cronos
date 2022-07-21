@@ -1,18 +1,22 @@
 import React from 'react'
+import "./Footbar.css"
+import Logo from "../../Assets/cronos.png"
 
 export default function Footbar() {
     return (
-        <footer>
+        <footer className="foot">
             <div className="container">
                 <div className="row">
                     <div className="col-4">
-                        <span className="brand">OjiStore</span>
+                        <span className="brand">
+                        <img className="logo" src={Logo} alt=""/>
+                        </span>
                         <p className="brand-tagline font weight-light">
                             Get your order as soon as quickly
                         </p>
                     </div>
                     <div className="col-3 mr-5">
-                        <h5 className="mt-2">
+                        <h5 className="mt-2 text-light">
                             About
                         </h5>
                         {/* <ul className="list-group list-group-flush"> */}
@@ -34,7 +38,7 @@ export default function Footbar() {
                         {/* </ul> */}
                     </div>
                     <div className="col-3 mr-5">
-                        <h5 className="mt-2">
+                        <h5 className="mt-2 text-light">
                             Usefull Links
                         </h5>
                         {/* <ul className="list-group list-group-flush"> */}
