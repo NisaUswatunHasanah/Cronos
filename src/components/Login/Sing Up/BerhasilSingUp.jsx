@@ -17,6 +17,7 @@ function BerhasilSingUp() {
           </div>
           <div>
             <Button  type="warning" style={{margin:"35px"}}>Perlihatkan ke saya Platformnya</Button>
+            <p><a href='/tampilansignin'>Tidak,terima kasih, saya akan jelajah sendiri</a></p>
             
           </div>
 

@@ -10,6 +10,7 @@ import SingUp from './components/Login/Sing Up/SingUp';
 import BuatPassword from './components/Login/Sing Up/BuatPassword';
 import SingIn from './components/Login/Sing In/SingIn';
 import BerhasilSingUp from './components/Login/Sing Up/BerhasilSingUp';
+import TampilanSignIn from './components/Login/Sing In/TampilanSignIn';
 
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
           <Route path="/kelengkapanData" element={<SingUp/>}/>
           <Route path='/signUp' element={<BuatPassword/>}/>
           <Route path='signIn' element={<SingIn/>}/>
-          <Route path='berhasil' element={<BerhasilSingUp/>}/>
+          <Route path='/berhasil' element={<BerhasilSingUp/>}/>
+          <Route path='/tampilansignin' element={<TampilanSignIn/>}/>
         </Routes>
       </Router>
     </div>

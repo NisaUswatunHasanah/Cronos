@@ -1,7 +1,7 @@
 import React from 'react';
 import { Content } from 'antd/lib/layout/layout';
 import Card from 'antd/lib/card/Card';
-import { Input,Button,Checkbox } from 'antd';
+import { Input,Button } from 'antd';
 import { MailTwoTone,LockTwoTone } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
 
@@ -26,7 +26,7 @@ const SingIn=()=> {
                   style={{fontSize:"20px",textIndent:"4px"}}/>} />
                   </div>
                   
-                  <Button style={{margin:"15px",width:"385px",height:'50px'}} type="primary" onClick={()=> {navigate("")}}>
+                  <Button style={{margin:"15px",width:"385px",height:'50px'}} type="primary" onClick={()=> {navigate("/tampilansignin")}}>
                     LOGIN
                   </Button>
                   <div>

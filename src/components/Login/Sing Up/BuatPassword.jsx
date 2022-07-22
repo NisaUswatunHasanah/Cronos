@@ -2,6 +2,7 @@ import { Card, Checkbox, Input, Layout,Button } from 'antd'
 import { LockTwoTone,MailTwoTone } from '@ant-design/icons'
 import { Content, Header } from 'antd/lib/layout/layout'
 import React from 'react'
+import Logo from "../../../Assets/cronos.png"
 import { useNavigate } from 'react-router-dom'
 
 const BuatPassword =()=> {
@@ -10,9 +11,12 @@ const BuatPassword =()=> {
     <div style={{background: "#F0F8FF",height: "100vh"}}>
         <Layout>
             <Header style={{background:"#4682B4"}}>
-                <p style={{marginLeft:"900px"}}>Already have a Finansial Acounting Acount?
+            <div>
+                <img style={ {marginTop:"5px"}} className="logo" src={Logo} alt=""/>
+                <tg style={{marginLeft:"700px",marginTop:"3px"}}>Already have a Finansial Acounting Acount?
                 <a href='/signIn' style={{color:'Highlight'}}> Sign In</a>
-                </p> 
+                </tg> 
+            </div>
             </Header>
             <Content>
               <div style={{padding:"30px",background: "#F0F8FF"}}>

@@ -26,8 +26,9 @@ const Navigationbar = () => {
           <img className="logo" src={Logo} alt=""/>
             </div>
           </Navbar.Brand>
+          
           <Nav>
-          <div className="grid-container">
+          <div className="grid-container" style={{marginTop:"25px"}}>
             <NavDropdown
               id="nav-dropdown-dark-example"
               title="Features"
@@ -59,12 +60,16 @@ const Navigationbar = () => {
               </div>
             </NavDropdown>
             </div>
+            <div style={{marginTop:"25px"}}>
             <Nav.Link href="/PriceList">Price</Nav.Link>
+
+            </div>
             <NavDropdown
               id="nav-dropdown-dark-example"
               title="Resources"
               menuVariant="light"
               href="Price"
+              style={{marginTop:"25px"}}
             >
               <Dropdown.Item href="#/action-1">
                 Help Documentation
@@ -76,9 +81,15 @@ const Navigationbar = () => {
               <Dropdown.Item href="#/action-6">Webinars</Dropdown.Item>
               <Dropdown.Item href="#/action-7">All Recources</Dropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/signIn">Sign In</Nav.Link>
-            <Button onClick={()=>{navigate("/signUp")}} variant="outline-light">Sign Up</Button>
+            <div style={{marginTop:"25px"}}>
+
+            <Nav.Link href="/signIn" >Sign In</Nav.Link>
+            </div>
+            <div>
+            <Button style={{marginTop:"25px"}} onClick={()=>{navigate("/signUp")}} variant="outline-light">Sign Up</Button>
+            </div>
           </Nav>
+         
         </Container>
       </Navbar>
     </div>
