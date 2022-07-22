@@ -27,7 +27,7 @@ const SingIn=()=> {
                   </div>
                   
                   <Button style={{margin:"15px",width:"385px",height:'50px'}} type="primary" onClick={()=> {navigate("")}}>
-                    CREATE ACCOUNT
+                    LOGIN
                   </Button>
                   <div>
                     <a href='/signUp'>Don't have an account?</a>

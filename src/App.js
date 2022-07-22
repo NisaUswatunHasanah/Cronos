@@ -1,5 +1,7 @@
 import './App.css';
 import React from 'react';
+import 'antd/dist/antd.css'; 
+import 'antd-button-color/dist/css/style.css';
 // import Get from '../src/Get'
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../src/components/Home/Home.jsx';
