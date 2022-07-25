@@ -39,7 +39,7 @@ const TampilanSignIn=() =>{
             <tr>
               <th>Nama perusahaan</th>
               <th>Tanggal Terdaftar</th>
-              <th>Kota</th>
+              <th>daerah</th>
             </tr>
             {listUser.map((data, index) => 
             <tr  key={index}>
