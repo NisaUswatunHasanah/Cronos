@@ -38,8 +38,8 @@ const TampilanSignIn=() =>{
           <table id="customers" style={{marginLeft:"300px"}}>
             <tr>
               <th>Nama perusahaan</th>
-              <th>Tanggal</th>
-              <th>daerah</th>
+              <th>Tanggal Terdaftar</th>
+              <th>Kota</th>
             </tr>
             {listUser.map((data, index) => 
             <tr  key={index}>
