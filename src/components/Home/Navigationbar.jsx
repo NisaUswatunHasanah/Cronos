@@ -37,7 +37,7 @@ const Navigationbar = () => {
             >
               
               <div className="grid-item">
-              <Dropdown.Item href="#/Purchasing">Purchasing</Dropdown.Item>
+              <Dropdown.Item href="#/Purchasing">Nisa</Dropdown.Item>
               <Dropdown.Item href="#/Master Data">Master Data</Dropdown.Item>
               <Dropdown.Item href="#/Cash Bank">Cash Bank</Dropdown.Item>
               <Dropdown.Item href="#/General Ledger">General Ledger</Dropdown.Item>
