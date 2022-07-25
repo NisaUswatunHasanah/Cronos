@@ -64,7 +64,7 @@ const SingUp =()=> {
                     <p>
                         Zona Waktu *
                     </p>
-                    <Input placeholder='Nama Organisasi' type={"time"}/>
+                    <Input placeholder='Nama Organisasi' type={"datetime-local"}/>
                 </div>
                 <div style={{margin:"30px"}}>
                     <p style={{color:"gray"}}>

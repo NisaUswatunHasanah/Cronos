@@ -1,21 +1,58 @@
+
 import { Header } from 'antd/lib/layout/layout'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from "../../../Assets/cronos.png"
+import "./TabelTerdaftar.css"
+import { getUser } from '../../services/authServices'
+import { Button } from 'antd'
+import { PoweroffOutlined } from '@ant-design/icons'
 
 
-function TampilanSignIn() {
+
+const TampilanSignIn=() =>{
+  const [listUser,setListUser] = useState([]);
+  const [message,setMessage]= useState("");
+
+  useEffect(()=>{
+      getUser(setListUser);
+      setTimeout(()=>{
+          setMessage("");
+      },3000);
+  },[message]);
   return (
     <div>
 
       <Header style={{background:"#4682B4"}}>
         <div>
         <img style={ {marginTop:"5px"}} className="logo" src={Logo} alt=""/>
-        <tg></tg>
+          <Button type='dashed' ghost style={{borderRadius:"30px",marginLeft:"930px"}}>Masuk Aplikasi</Button>
+          <PoweroffOutlined style={{marginLeft:"8px",fontSize:"20px",color:"Highlight"}} />
         </div>
+        
+        
       </Header>
-      <div style={{height:"200vh",background: "#F0F8FF"}}>
-      </div>
+      
+      <div style={{height:"flex",background: "#F0F8FF"}}>
+        <p style={{padding:"10px",textAlign:"center",fontFamily:"fantasy",fontWeight:"bold",fontSize:"40px"}}> Pengguna Terdaftar Aplikasi </p>
+        <p style={{textAlign:"center",fontFamily:"fantasy",fontWeight:"bold",fontSize:"40px",lineHeight:"0px"}}> Finansial Accounting </p>
+          <table id="customers" style={{marginLeft:"300px"}}>
+            <tr>
+              <th>Nama perusahaan</th>
+              <th>Tanggal Terdaftar</th>
+              <th>Kota</th>
+            </tr>
+            {listUser.map((data, index) => 
+            <tr  key={index}>
+              <td>{data.isi_content}</td>
+              <td>{data.id}</td>
+              <td>{data.image}</td>
+            </tr>
+            )}
+        
+          </table>  
     </div>
+      </div>
+  
     
   )
 }

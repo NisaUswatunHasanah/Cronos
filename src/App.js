@@ -13,6 +13,7 @@ import BerhasilSingUp from './components/Login/Sing Up/BerhasilSingUp';
 import TampilanSignIn from './components/Login/Sing In/TampilanSignIn';
 
 
+
 function App() {
   return (
     <div className="App">
@@ -26,6 +27,7 @@ function App() {
           <Route path='signIn' element={<SingIn/>}/>
           <Route path='/berhasil' element={<BerhasilSingUp/>}/>
           <Route path='/tampilansignin' element={<TampilanSignIn/>}/>
+      
         </Routes>
       </Router>
     </div>
