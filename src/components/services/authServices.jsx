@@ -1,10 +1,10 @@
 import axios from "axios";
 
-const BASE_PATH ="https://4f8e-2404-c0-7140-00-abe5-7e57.ap.ngrok.io";
+const BASE_PATH ="https://1994-2404-c0-7450-00-b577-91f5.ap.ngrok.io";
 
 export async function getUser(setListUser){
     try{
-        const results = await axios.get (`${BASE_PATH}/read/1`);
+        const results = await axios.get (`${BASE_PATH}/registerbaca`);
         setListUser(results.data.data)
         // console.log(results.data.data);
     }catch(error){

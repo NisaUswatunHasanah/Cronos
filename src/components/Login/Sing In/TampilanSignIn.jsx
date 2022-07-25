@@ -26,7 +26,7 @@ const TampilanSignIn=() =>{
         <div>
         <img style={ {marginTop:"5px"}} className="logo" src={Logo} alt=""/>
           <Button type='dashed' ghost style={{borderRadius:"30px",marginLeft:"930px"}}>Masuk Aplikasi</Button>
-          <PoweroffOutlined style={{marginLeft:"8px",fontSize:"20px",color:"Highlight"}} />
+          <PoweroffOutlined style={{marginLeft:"20px",fontSize:"20px",color:"Highlight"}} />
         </div>
         
         
@@ -43,9 +43,9 @@ const TampilanSignIn=() =>{
             </tr>
             {listUser.map((data, index) => 
             <tr  key={index}>
-              <td>{data.isi_content}</td>
+              <td>{data.username}</td>
               <td>{data.id}</td>
-              <td>{data.image}</td>
+              <td>{data.password}</td>
             </tr>
             )}
         
