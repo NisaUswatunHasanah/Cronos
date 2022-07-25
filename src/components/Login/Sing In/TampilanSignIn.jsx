@@ -38,7 +38,7 @@ const TampilanSignIn=() =>{
           <table id="customers" style={{marginLeft:"300px"}}>
             <tr>
               <th>Nama perusahaan</th>
-              <th>Tanggal Terdaftar</th>
+              <th>Tanggal</th>
               <th>daerah</th>
             </tr>
             {listUser.map((data, index) => 
