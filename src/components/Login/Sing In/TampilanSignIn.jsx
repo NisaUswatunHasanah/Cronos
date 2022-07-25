@@ -43,9 +43,9 @@ const TampilanSignIn=() =>{
             </tr>
             {listUser.map((data, index) => 
             <tr  key={index}>
-              <td>{data.username}</td>
-              <td>{data.id}</td>
-              <td>{data.password}</td>
+              <td>{data.email}</td>
+              <td>{data.city}</td>
+              <td>{data.country}</td>
             </tr>
             )}
         
