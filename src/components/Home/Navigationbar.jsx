@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Navbar,
   Container,
@@ -10,9 +10,19 @@ import {
 import "./NavigationBar.css";
 import Logo from "../../Assets/cronos.png"
 import {  useNavigate } from "react-router-dom";
+import { getUser } from "../services/Get"
 
 const Navigationbar = () => {
-  const navigate = useNavigate()
+  const [listUser,setListUser] = useState([]);
+    const [message,setMessage]= useState("");
+
+    useEffect(()=>{
+        getUser(setListUser);
+        setTimeout(()=>{
+            setMessage("");
+        },3000);
+    },[message]);
+  const navigate = useNavigate();
   return (
     <div>
       <Navbar
@@ -36,17 +46,48 @@ const Navigationbar = () => {
               
             >
               
-              <div className="grid-item">
-              <Dropdown.Item href="#/Purchasing">Nisa</Dropdown.Item>
-              <Dropdown.Item href="#/Master Data">Master Data</Dropdown.Item>
-              <Dropdown.Item href="#/Cash Bank">Cash Bank</Dropdown.Item>
-              <Dropdown.Item href="#/General Ledger">General Ledger</Dropdown.Item>
-              <Dropdown.Item href="#/Account Payabel">Account Payabel</Dropdown.Item>
-              <Dropdown.Item href="#/Account Receiveable">Account Receiveable</Dropdown.Item>
-              <Dropdown.Item href="#/Fixed Assets">Fixed Assets</Dropdown.Item>
-              <Dropdown.Item href="#/Inventory">Inventory</Dropdown.Item>
-              <Dropdown.Item href="#/Configuration">Configuration</Dropdown.Item>
-              </div>
+              <div>
+              {listUser.filter((syafak)=>  syafak.id === 1 ).map((syafak,index)=>(
+                <Dropdown.Item href="#/purchasing">{syafak.nama}</Dropdown.Item>
+              ))}
+              {listUser.filter((syafak)=>  syafak.id === 2 ).map((syafak,index)=>(
+                <Dropdown.Item href="#/masterData">{syafak.nama}</Dropdown.Item>
+              ))}
+              {listUser.filter((syafak)=>  syafak.id === 3 ).map((syafak,index)=>(
+                <Dropdown.Item href="#/cashBank">{syafak.nama}</Dropdown.Item>
+              ))}
+              {listUser.filter((syafak)=>  syafak.id === 4 ).map((syafak,index)=>(
+                <Dropdown.Item href="#/generalLedger">{syafak.nama}</Dropdown.Item>
+              ))}
+              {listUser.filter((syafak)=>  syafak.id === 5 ).map((syafak,index)=>(
+                <Dropdown.Item href="#/accountPayable">{syafak.nama}</Dropdown.Item>
+              ))}
+              {listUser.filter((syafak)=>  syafak.id === 6 ).map((syafak,index)=>(
+                <Dropdown.Item href="#/accountReceiveable">{syafak.nama}</Dropdown.Item>
+              ))}
+              {listUser.filter((syafak)=>  syafak.id === 7 ).map((syafak,index)=>(
+                <Dropdown.Item href="#/fixedAssets">{syafak.nama}</Dropdown.Item>
+              ))}
+              {listUser.filter((syafak)=>  syafak.id === 8 ).map((syafak,index)=>(
+                <Dropdown.Item href="#/inventory">{syafak.nama}</Dropdown.Item>
+              ))}
+              {listUser.filter((syafak)=>  syafak.id === 9 ).map((syafak,index)=>(
+                <Dropdown.Item href="#/configuration">{syafak.nama}</Dropdown.Item>
+              ))}
+              {listUser.filter((syafak)=>  syafak.id === 10 ).map((syafak,index)=>(
+                <Dropdown.Item href="#/payroll">{syafak.nama}</Dropdown.Item>
+              ))}
+              {listUser.filter((syafak)=>  syafak.id === 11 ).map((syafak,index)=>(
+                <Dropdown.Item href="#/reportFinance">{syafak.nama}</Dropdown.Item>
+              ))}
+              {listUser.filter((syafak)=>  syafak.id === 12 ).map((syafak,index)=>(
+                <Dropdown.Item href="#/production">{syafak.nama}</Dropdown.Item>
+              ))}
+              {listUser.filter((syafak)=>  syafak.id === 13 ).map((syafak,index)=>(
+                <Dropdown.Item href="#/scrap">{syafak.nama}</Dropdown.Item>
+              ))}
+             </div>
+              {/* </div>
               <div className="grid-item">
               <Dropdown.Item href="#/Payroll">Payroll</Dropdown.Item>
               <Dropdown.Item href="#/Report Finance">Report Finance</Dropdown.Item>
@@ -56,8 +97,10 @@ const Navigationbar = () => {
               <Dropdown.Item href="#/Maintenence Management">Maintenence Management</Dropdown.Item>
               <Dropdown.Item href="#/Human Resources">Human Resources</Dropdown.Item>
               <Dropdown.Item href="#/financing accounting cronos">financing accounting cronos</Dropdown.Item>
+             
               
-              </div>
+              </div> */}
+              
             </NavDropdown>
             </div>
             <div style={{marginTop:"25px"}}>

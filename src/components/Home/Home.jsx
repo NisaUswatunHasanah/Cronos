@@ -1,4 +1,4 @@
-import Navigationbar from './Navigationbar'
+import NavigationBar from '../Home/Navigationbar'
 import Intro from '../Home/Intro'
 import Price from '../Home/Price'
 import ManfaatCronos from './ManfaatCronos'
@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
     <div className="header border">
-    <Navigationbar />
+    <NavigationBar />
     <Intro />
     </div>
     <ManfaatCronos/>
