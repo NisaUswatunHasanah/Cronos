@@ -29,7 +29,7 @@ const BuatPassword =()=> {
                   style={{fontSize:"20px",textIndent:"4px"}}/>} />
                   <br/>
                   <br/>
-                  <Input type={"password"} placeholder="Password" style={{height:"50px"}} 
+                  <Input.Password type={"password"} placeholder="Password" style={{height:"50px"}} 
                   prefix={<LockTwoTone 
                   style={{fontSize:"20px",textIndent:"4px"}}/>} />
                   </div>
