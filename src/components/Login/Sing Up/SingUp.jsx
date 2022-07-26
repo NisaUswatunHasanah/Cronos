@@ -1,11 +1,27 @@
 import { Button, Card, Input, Space} from 'antd';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { InfoCircleTwoTone } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
 import "./SingUp.css";
+import { getUser,postUser } from '../../services/authServices';
 
 const SingUp =()=> {
     const navigate = useNavigate()
+    const setListUser = useState([]);
+    const [massage,setMessage]= useState("");
+    const setIsEditing = useState(false);
+    const [dataUser,setDataUser] = useState({date:"",organizationname:"",country:"",province:"",city:"",address:"",postalcode:"",currency:"",language:""});
+    console.log(dataUser,setDataUser);
+
+    useEffect(()=>{
+        getUser(setListUser);
+        setTimeout(()=>{
+            setMessage("");
+        },3000);
+    },[massage]);
+
+  
+ 
   return (
     <div className='bg'>
         <div style={{padding:"80px"}}>
@@ -26,7 +42,11 @@ const SingUp =()=> {
                     <p>
                         Nama Organisasi *
                     </p>
-                    <Input placeholder='Nama Organisasi' type={"text"}/>
+                    <Input placeholder='Nama Organisasi' type={"text"}
+                            value={dataUser.organizationname} 
+                                onChange={(e)=>{
+                                    setDataUser({...dataUser,organizationname:e.target.value})
+                                }} />
                 </div>
                 <div style={{margin:"30px",lineHeight:"0px"}}>
                    <tg>Lokal Bisnis *</tg>
@@ -38,11 +58,31 @@ const SingUp =()=> {
                 </div>
                 <div style={{margin:"30px"}}>
                   
-                    <Input placeholder='Negara' style={{width:"315px"}}></Input>
-                    <Input placeholder='Negara Bagian' style={{width:"315px",insetInline:"85px"}}></Input>
-                    <Input placeholder='Nama Organisasi' type={"text"} style={{marginTop:"15px"}}/>
-                    <Input placeholder='Kota' style={{width:"315px",marginTop:"15px"}}></Input>
-                    <Input placeholder='Kode Pos' style={{width:"315px",insetInline:"85px",marginTop:"15px"}}></Input>
+                    <Input placeholder='Negara' style={{width:"315px"}}  
+                        value={dataUser.country} 
+                                onChange={(e)=>{
+                                    setDataUser({...dataUser,country:e.target.value})
+                                }}></Input>
+                    <Input placeholder='Negara Bagian' style={{width:"315px",insetInline:"85px"}}
+                        value={dataUser.province} 
+                                onChange={(e)=>{
+                                    setDataUser({...dataUser,province:e.target.value})
+                                }}></Input>
+                    <Input placeholder='Alamat' type={"text"} style={{marginTop:"15px"}}
+                         value={dataUser.address} 
+                                onChange={(e)=>{
+                                    setDataUser({...dataUser,address:e.target.value})
+                                }}/>
+                    <Input placeholder='Kota' style={{width:"315px",marginTop:"15px"}}
+                        value={dataUser.city} 
+                                onChange={(e)=>{
+                                    setDataUser({...dataUser,city:e.target.value})
+                                }}></Input>
+                    <Input placeholder='Kode Pos' style={{width:"315px",insetInline:"85px",marginTop:"15px"}}
+                         value={dataUser.postalcode} 
+                                onChange={(e)=>{
+                                    setDataUser({...dataUser,postalcode:e.target.value})
+                                }}></Input>
                 </div>
                 <div style={{margin:"30px"}}>
                     <p style={{color:"gray"}}>
@@ -57,14 +97,28 @@ const SingUp =()=> {
                         </div>
                 </div>
                 <div style={{margin:"30px"}}>
-                    <Input placeholder='Mata Uang' style={{width:"315px"}}></Input>
-                    <Input type={"language"} placeholder='Bahasa' style={{width:"315px",insetInline:"85px"}}></Input>
+                    <Input placeholder='Mata Uang' style={{width:"315px"}}
+                         value={dataUser.currency} 
+                            onChange={(e)=>{
+                                setDataUser({...dataUser,currency:e.target.value})
+                            }}></Input>
+                    <Input type={"language"} placeholder='Bahasa' style={{width:"315px",insetInline:"85px"}}
+                         value={dataUser.language} 
+                            onChange={(e)=>{
+                                setDataUser({...dataUser,language:e.target.value})
+                            }}>
+                            
+                    </Input>
                 </div>
                 <div style={{margin:"30px"}}>
                     <p>
-                        Zona Waktu *
+                        Tanggal Terdaftar *
                     </p>
-                    <Input placeholder='Nama Organisasi' type={"datetime-local"}/>
+                    <Input type={"date"}
+                     value={dataUser.date} 
+                     onChange={(e)=>{
+                         setDataUser({...dataUser,date:e.target.value})
+                     }}/>
                 </div>
                 <div style={{margin:"30px"}}>
                     <p style={{color:"gray"}}>
@@ -85,7 +139,8 @@ const SingUp =()=> {
                     <p style={{borderBottom:"1px solid grey",lineHeigth:"10px"}}></p>   
                 </div>
                 <div style={{margin:"30px"}}>
-                   <Button type='primary' onClick={()=>{navigate("/berhasil")}}>Memulai</Button>   
+                   <Button type='primary' onClick={()=>{postUser(dataUser,setDataUser,setMessage,setIsEditing)
+                     navigate("/berhasil")}}>Memulai</Button>   
                    <div  style={{marginLeft:"600px"}}>
                        <tg>Kebijakan Privasi</tg>
                    </div>
