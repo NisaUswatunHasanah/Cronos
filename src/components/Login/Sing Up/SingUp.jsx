@@ -10,7 +10,7 @@ const SingUp =()=> {
     const setListUser = useState([]);
     const [massage,setMessage]= useState("");
     const setIsEditing = useState(false);
-    const [dataUser,setDataUser] = useState({date:"",organizationname:"",country:"",province:"",city:"",address:"",postalcode:"",currency:"",language:""});
+    const [dataUser,setDataUser] = useState({tanggal:"",organizationname:"",country:"",province:"",city:"",address:"",postalcode:"",currency:"",language:""});
     console.log(dataUser,setDataUser);
 
     useEffect(()=>{
@@ -103,7 +103,7 @@ const SingUp =()=> {
                                 setDataUser({...dataUser,currency:e.target.value})
                             }}></Input>
                     <Input type={"language"} placeholder='Bahasa' style={{width:"315px",insetInline:"85px"}}
-                         value={dataUser.language} 
+                         value={dataUser.language}  
                             onChange={(e)=>{
                                 setDataUser({...dataUser,language:e.target.value})
                             }}>
@@ -115,9 +115,9 @@ const SingUp =()=> {
                         Tanggal Terdaftar *
                     </p>
                     <Input type={"date"}
-                     value={dataUser.date} 
+                     value={dataUser.tanggal}
                      onChange={(e)=>{
-                         setDataUser({...dataUser,date:e.target.value})
+                         setDataUser({...dataUser,tanggal:e.target.value})
                      }}/>
                 </div>
                 <div style={{margin:"30px"}}>
@@ -139,11 +139,19 @@ const SingUp =()=> {
                     <p style={{borderBottom:"1px solid grey",lineHeigth:"10px"}}></p>   
                 </div>
                 <div style={{margin:"30px"}}>
-                   <Button type='primary' onClick={()=>{postUser(dataUser,setDataUser,setMessage,setIsEditing)
-                     navigate("/berhasil")}}>Memulai</Button>   
-                   <div  style={{marginLeft:"600px"}}>
+                   <Button type='primary'
+                    onClick={()=>{postUser(dataUser,setDataUser,setMessage,setIsEditing)
+                        navigate("/berhasil")}}
+                        disabled={!dataUser.address||!dataUser.city||!dataUser.country||!dataUser.currency
+                                  ||!dataUser.language||!dataUser.organizationname||!dataUser.postalcode||
+                                  !dataUser.province||!dataUser.tanggal}
+                        >
+                         Memulai
+                   </Button>
+                   <p style={{color:"GrayText",lineHeight:"30px"}}>isi semua form terlebih dahulu untuk dapat melanjutkan registrasi!</p>   
+                   <p  style={{marginLeft:"550px"}}>
                        <tg>Kebijakan Privasi</tg>
-                   </div>
+                   </p>
                 </div>
                 
               

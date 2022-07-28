@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_PATH ="https://bf40-2404-c0-7050-00-b30e-6bc.ap.ngrok.io";
+const BASE_PATH ="https://99b2-118-96-154-102.ap.ngrok.io";
 
 export async function getUser(setListUser){
     try{
