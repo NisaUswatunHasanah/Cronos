@@ -31,7 +31,8 @@ const BuatPassword =()=> {
                   <br/>
                   <Input.Password type={"password"} placeholder="Password" style={{height:"50px"}} 
                   prefix={<LockTwoTone 
-                  style={{fontSize:"20px",textIndent:"4px"}}/>} />
+                  style={{fontSize:"20px",textIndent:"4px"}}/>} 
+                  />
                   </div>
                   <div style={{margin:"20px"}}>
                   <p style={{lineHeight:""}}> Your data will be in US data center</p>
