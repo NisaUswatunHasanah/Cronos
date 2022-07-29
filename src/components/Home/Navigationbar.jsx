@@ -49,42 +49,42 @@ const Navigationbar = () => {
               <div>
               {listUser.filter((syafak)=>  syafak.id === 1 ).map((syafak,index)=>(
                 <Dropdown.Item onClick={()=>{navigate("/purchasing")}}>{syafak.nama}</Dropdown.Item>
-              ))}
+              ))} 
               {listUser.filter((syafak)=>  syafak.id === 2 ).map((syafak,index)=>(
-                <Dropdown.Item href="#/masterData">{syafak.nama}</Dropdown.Item>
+                <Dropdown.Item onClick={()=>{navigate("/masterData")}}>{syafak.nama}</Dropdown.Item>
               ))}
               {listUser.filter((syafak)=>  syafak.id === 3 ).map((syafak,index)=>(
-                <Dropdown.Item href="#/cashBank">{syafak.nama}</Dropdown.Item>
+                <Dropdown.Item onClick={()=>{navigate("/cashBank")}}>{syafak.nama}</Dropdown.Item>
               ))}
               {listUser.filter((syafak)=>  syafak.id === 4 ).map((syafak,index)=>(
-                <Dropdown.Item href="#/generalLedger">{syafak.nama}</Dropdown.Item>
+                <Dropdown.Item onClick={()=>{navigate("/generalLedger")}}>{syafak.nama}</Dropdown.Item>
               ))}
               {listUser.filter((syafak)=>  syafak.id === 5 ).map((syafak,index)=>(
-                <Dropdown.Item href="#/accountPayable">{syafak.nama}</Dropdown.Item>
+                <Dropdown.Item onClick={()=>{navigate("/accountPayable")}}>{syafak.nama}</Dropdown.Item>
               ))}
               {listUser.filter((syafak)=>  syafak.id === 6 ).map((syafak,index)=>(
-                <Dropdown.Item href="#/accountReceiveable">{syafak.nama}</Dropdown.Item>
+                <Dropdown.Item onClick={()=>{navigate("/accounReceiveable")}}>{syafak.nama}</Dropdown.Item>
               ))}
               {listUser.filter((syafak)=>  syafak.id === 7 ).map((syafak,index)=>(
-                <Dropdown.Item href="#/fixedAssets">{syafak.nama}</Dropdown.Item>
+                <Dropdown.Item onClick={()=>{navigate("/fixedAsset")}}>{syafak.nama}</Dropdown.Item>
               ))}
               {listUser.filter((syafak)=>  syafak.id === 8 ).map((syafak,index)=>(
-                <Dropdown.Item href="#/inventory">{syafak.nama}</Dropdown.Item>
+                <Dropdown.Item onClick={()=>{navigate("/inventory")}}>{syafak.nama}</Dropdown.Item>
               ))}
               {listUser.filter((syafak)=>  syafak.id === 9 ).map((syafak,index)=>(
-                <Dropdown.Item href="#/configuration">{syafak.nama}</Dropdown.Item>
+                <Dropdown.Item onClick={()=>{navigate("/configuration")}}>{syafak.nama}</Dropdown.Item>
               ))}
               {listUser.filter((syafak)=>  syafak.id === 10 ).map((syafak,index)=>(
                 <Dropdown.Item href="#/payroll">{syafak.nama}</Dropdown.Item>
               ))}
               {listUser.filter((syafak)=>  syafak.id === 11 ).map((syafak,index)=>(
-                <Dropdown.Item href="#/reportFinance">{syafak.nama}</Dropdown.Item>
+                <Dropdown.Item onClick={()=>{navigate("/reportFinance")}}>{syafak.nama}</Dropdown.Item>
               ))}
               {listUser.filter((syafak)=>  syafak.id === 12 ).map((syafak,index)=>(
-                <Dropdown.Item href="#/production">{syafak.nama}</Dropdown.Item>
+                <Dropdown.Item onClick={()=>{navigate("/production")}}>{syafak.nama}</Dropdown.Item>
               ))}
               {listUser.filter((syafak)=>  syafak.id === 13 ).map((syafak,index)=>(
-                <Dropdown.Item href="#/scrap">{syafak.nama}</Dropdown.Item>
+                <Dropdown.Item onClick={()=>{navigate("/scrap")}}>{syafak.nama}</Dropdown.Item>
               ))}
              </div>
               

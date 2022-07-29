@@ -6,7 +6,19 @@ import 'antd-button-color/dist/css/style.css';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../src/components/Home/Home.jsx';
 import Purchasing from '../src/components/Features/Purchasing';
-import PriceList from '../src/components/PriceList/PriceList'
+import MasterData from '../src/components/Features/MasterData';
+import CashBank from '../src/components/Features/CashBank';
+import GeneralLedger from '../src/components/Features/GeneralLedger';
+import AccountPayable from '../src/components/Features/AccountPayable';
+import AccountReceiveable from '../src/components/Features/AccountReceiveable';
+import FixedAsset from '../src/components/Features/FixedAssets';
+import Inventory from '../src/components/Features/Inventory';
+import Configuration from '../src/components/Features/Configuration';
+import Payroll from '../src/components/Features/Payroll';
+import ReportFinance from '../src/components/Features/ReportFinace';
+import Production from '../src/components/Features/Production';
+import Scrap from '../src/components/Features/Scrap';
+import PriceList from '../src/components/PriceList/PriceList';
 import SingUp from './components/Login/Sing Up/SingUp';
 import BuatPassword from './components/Login/Sing Up/BuatPassword';
 import SingIn from './components/Login/Sing In/SingIn';
@@ -23,6 +35,18 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/purchasing" element={<Purchasing />} />
+          <Route path="/masterData" element={<MasterData/>} />
+          <Route path="/cashBank" element={<CashBank />} />
+          <Route path="/generalLedger" element={<GeneralLedger />} />
+          <Route path="/accountPayable" element={<AccountPayable />} />
+          <Route path="/accountReceiveable" element={<AccountReceiveable />} />
+          <Route path="/fixedAsset" element={<FixedAsset />} />
+          <Route path="/inventory" element={<Inventory />} />
+          <Route path="/configuration" element={<Configuration />} />
+          <Route path="/payroll" element={<Payroll />} />
+          <Route path="/reportFinance" element={<ReportFinance />} />
+          <Route path="/production" element={<Production />} />
+          <Route path="/scrap" element={<Scrap />} />
           <Route path="/PriceList" element={<PriceList />} />
           <Route path="/kelengkapanData" element={<SingUp/>}/>
           <Route path='/signUp' element={<BuatPassword/>}/>
