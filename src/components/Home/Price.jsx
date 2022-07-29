@@ -48,6 +48,8 @@ const Price = () => {
       </Row>
       </Container>
       <h5 className='learnmore'><a href="/PriceList">Learn more...</a></h5>
+      <br/>
+      <br/>
     </div>
   );
 };

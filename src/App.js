@@ -5,6 +5,7 @@ import 'antd-button-color/dist/css/style.css';
 // import Get from '../src/Get'
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../src/components/Home/Home.jsx';
+import Purchasing from '../src/components/Features/Purchasing';
 import PriceList from '../src/components/PriceList/PriceList'
 import SingUp from './components/Login/Sing Up/SingUp';
 import BuatPassword from './components/Login/Sing Up/BuatPassword';
@@ -21,6 +22,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/purchasing" element={<Purchasing />} />
           <Route path="/PriceList" element={<PriceList />} />
           <Route path="/kelengkapanData" element={<SingUp/>}/>
           <Route path='/signUp' element={<BuatPassword/>}/>
