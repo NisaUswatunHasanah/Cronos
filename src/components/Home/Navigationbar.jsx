@@ -48,7 +48,7 @@ const Navigationbar = () => {
               
               <div>
               {listUser.filter((syafak)=>  syafak.id === 1 ).map((syafak,index)=>(
-                <Dropdown.Item href="#/purchasing">{syafak.nama}</Dropdown.Item>
+                <Dropdown.Item onClick={()=>{navigate("/purchasing")}}>{syafak.nama}</Dropdown.Item>
               ))}
               {listUser.filter((syafak)=>  syafak.id === 2 ).map((syafak,index)=>(
                 <Dropdown.Item href="#/masterData">{syafak.nama}</Dropdown.Item>
@@ -87,19 +87,6 @@ const Navigationbar = () => {
                 <Dropdown.Item href="#/scrap">{syafak.nama}</Dropdown.Item>
               ))}
              </div>
-              {/* </div>
-              <div className="grid-item">
-              <Dropdown.Item href="#/Payroll">Payroll</Dropdown.Item>
-              <Dropdown.Item href="#/Report Finance">Report Finance</Dropdown.Item>
-              <Dropdown.Item href="#/Production">Production</Dropdown.Item>
-              <Dropdown.Item href="#/Scrap">Scrap</Dropdown.Item>
-              <Dropdown.Item href="#/Sales">Sales</Dropdown.Item>
-              <Dropdown.Item href="#/Maintenence Management">Maintenence Management</Dropdown.Item>
-              <Dropdown.Item href="#/Human Resources">Human Resources</Dropdown.Item>
-              <Dropdown.Item href="#/financing accounting cronos">financing accounting cronos</Dropdown.Item>
-             
-              
-              </div> */}
               
             </NavDropdown>
             </div>
