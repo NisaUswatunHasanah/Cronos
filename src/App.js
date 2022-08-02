@@ -5,6 +5,7 @@ import 'antd-button-color/dist/css/style.css';
 // import Get from '../src/Get'
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../src/components/Home/Home.jsx';
+import SideBar from '../src/components/Features/SideBar'
 import Purchasing from '../src/components/Features/Purchasing';
 import MasterData from '../src/components/Features/MasterData';
 import CashBank from '../src/components/Features/CashBank';
@@ -34,6 +35,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/sideBar" element={<SideBar />} />
           <Route path="/purchasing" element={<Purchasing />} />
           <Route path="/masterData" element={<MasterData/>} />
           <Route path="/cashBank" element={<CashBank />} />
