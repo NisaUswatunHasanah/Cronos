@@ -21,10 +21,10 @@ import Production from '../src/components/Features/Production';
 import Scrap from '../src/components/Features/Scrap';
 import PriceList from '../src/components/PriceList/PriceList';
 import SingUp from './components/Login/Sing Up/SingUp';
-import BuatPassword from './components/Login/Sing Up/BuatPassword';
 import SingIn from './components/Login/Sing In/SingIn';
 import BerhasilSingUp from './components/Login/Sing Up/BerhasilSingUp';
 import TampilanSignIn from './components/Login/Sing In/TampilanSignIn';
+import Daftar from './components/Login/Sing Up/Daftar';
 
 
 
@@ -51,7 +51,7 @@ function App() {
           <Route path="/scrap" element={<Scrap />} />
           <Route path="/PriceList" element={<PriceList />} />
           <Route path="/kelengkapanData" element={<SingUp/>}/>
-          <Route path='/signUp' element={<BuatPassword/>}/>
+          <Route path='/signUp' element={<Daftar/>}/>
           <Route path='signIn' element={<SingIn/>}/>
           <Route path='/berhasil' element={<BerhasilSingUp/>}/>
           <Route path='/tampilansignin' element={<TampilanSignIn/>}/>
