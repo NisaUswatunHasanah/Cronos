@@ -36,7 +36,7 @@ const Daftar = () => {
         <Layout>
             <Header style={{background:"#4682B4"}}>
               <div>
-                  <tg style={{marginLeft:"700px",marginTop:"3px"}}>Already have a Finansial Acounting Acount?
+                  <tg style={{marginLeft:"900px",marginTop:"3px"}}>Already have a Finansial Acounting Acount?
                   <a href='/signIn' style={{color:'Highlight'}}> Sign In</a>
                   </tg> 
               </div>
