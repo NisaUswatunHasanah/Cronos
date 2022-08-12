@@ -4,6 +4,7 @@ import Card from 'antd/lib/card/Card';
 import { Input,Button } from 'antd';
 import { MailTwoTone,LockTwoTone } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
+import { LoginProfil } from '../../services/registrationService';
 
 
 const SingIn=()=> {
@@ -18,15 +19,19 @@ const SingIn=()=> {
 
                   <Input type={"email"} placeholder="Email" style={{height:"50px"}} 
                   prefix={<MailTwoTone   
-                  style={{fontSize:"20px",textIndent:"4px"}}/>} />
+                  style={{fontSize:"20px",textIndent:"4px"}}/>}
+                  />
                   <br/>
                   <br/>
                   <Input.Password type={"password"} placeholder="Password" style={{height:"50px"}} 
                   prefix={<LockTwoTone 
-                  style={{fontSize:"20px",textIndent:"4px"}}/>} />
+                  style={{fontSize:"20px",textIndent:"4px"}}/>}
+                  />
                   </div>
                   
-                  <Button style={{margin:"15px",width:"385px",height:'50px'}} type="primary" onClick={()=> {navigate("/tampilansignin")}}>
+                  <Button style={{margin:"15px",width:"385px",height:'50px'}} type="primary" 
+                    onClick={() => navigate('/tampilansignin')}
+                    >
                     LOGIN
                   </Button>
                   <div>
